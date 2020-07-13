@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  color:$color-link;
+  background: $color-orangered;
+}
+
+::-webkit-scrollbar{
+  width: 1.5rem;
+  background: $color-grey-dark-3;
+}
+
+::-webkit-scrollbar-track{
+   border: 1px solid rgba($color-grey,.5);
+   box-shadow: inset .1rem .1rem .5rem $color-grey;
+   display: none;
+}
+
+::-webkit-scrollbar-thumb{
+    // background-image: linear-gradient(to bottom, $color-grey,$color-warning, $color-cyan,$color-orangered);
+    background: $color-orangered;
+}
+
+html{
+  // 1 rem
+  font-size: 62.5%;
+  font-family: sans-serif;
+  letter-spacing: .5px;
+
+  @include respond(tab-land){
+    font-size: 56.25%;
+  }
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+  @include respond(phone){
+    font-size: 45%;
+  }
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+a {
+  color: $color-react-blue;
+  text-decoration: none;
+}
+a[href="/profile"]{
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+hr{
+  border: none;
+  border-bottom: 2px dashed $color-orangered;
+  margin:0 auto;
+  width: 25%;
+}
+textarea{
+  font-family: sans-serif;
+  height: 20rem;
+}

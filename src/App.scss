@@ -1,0 +1,41 @@
+// abstracts
+@import "styles/abstracts/functions";
+@import "styles/abstracts/mixins";
+@import "styles/abstracts/variables";
+
+// base
+@import "styles/base/base";
+
+// layout
+@import "styles/layout/layout";
+
+// sass-components
+@import "styles/sass-components/navigation/toolbar/toolbar";
+@import "styles/sass-components/navigation/toolbar/nav-items/nav-items";
+@import "styles/sass-components/navigation/toolbar/nav-items/nav-item/nav-item";
+@import "styles/sass-components/navigation/side-drawer/side-drawer";
+@import "styles/sass-components/main/formUI";
+@import "styles/sass-components/main/main";
+@import "styles/sass-components/btn/submit-btn";
+@import "styles/sass-components/background/background";
+@import "styles/sass-components/dashboard/dashboard";
+@import "styles/sass-components/project-item/project-item";
+@import "styles/sass-components/dark-btn/dark-btn";
+@import "styles/sass-components/add-project/add-project";
+@import "styles/sass-components/add-task/add-task";
+@import "styles/sass-components/spinner/spinner";
+@import "styles/sass-components/project-board/project-board";
+@import "styles/sass-components/project-board/project-board-chart/project-board-chart";
+@import "styles/sass-components/project-board/project-board-toggler/project-board-toggler";
+@import "styles/sass-components/project-board/project-board-todo/project-board-todo";
+@import "styles/sass-components/project-board/project-board-in-development/project-board-in-development";
+@import "styles/sass-components/project-board/project-board-completed/project-board-completed";
+@import "styles/sass-components/priority-classes/priority-classes";
+@import "styles/sass-components/project-board-anatomy/project-board-anatomy";
+@import "styles/sass-components/project-board/detail-view/detail-view";
+@import "styles/sass-components/search-btn/search-btn";
+@import "styles/sass-components/row-maker";
+@import "styles/sass-components/project-board/task-detail-view/task-detail-view";
+@import "styles/sass-components/landing/landing";
+@import "styles/sass-components/card/card";
+@import "styles/sass-components/page-not-found";

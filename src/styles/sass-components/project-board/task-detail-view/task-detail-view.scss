@@ -1,0 +1,149 @@
+.taskDetailView{
+  border: 1px solid $color-orangered;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  color:$color-grey-light;
+  // text-transform: capitalize;
+  align-self: flex-start;
+  width: 100%;
+  @include respond(phone){
+
+  }
+  &__head{
+     // border: 1px solid $color-orangered;
+     @include respond(phone){
+
+     }
+  }
+  &__date{
+    padding: .2rem 1rem;
+    @include respond(phone){
+
+    }
+  }
+  &__createdOn{
+    text-align: right;
+    @include respond(phone){
+
+    }
+  }
+  &__identifier{
+    text-align: center;
+    @include respond(phone){
+
+    }
+  }
+  &__notes{
+    // border: 1px solid $color-orangered;
+    padding: .1rem 2rem;
+    margin-bottom: 3rem;
+    max-height: 20rem;
+    overflow-y: auto;
+    padding-left: 3.5rem;
+    &::-webkit-scrollbar{
+      width: 1.5rem;
+      background: transparent;
+    }
+    @include respond(phone){
+
+    }
+  }
+  &__note{
+    font-size: 1.5rem;
+    color: $color-grey-light;
+    border-right: 2px solid $color-orangered;
+    margin-bottom:.5rem;
+    @include respond(phone){
+
+    }
+  }
+  &__links{
+    color: $color-grey-light;
+    // border: 1px solid $color-orangered;
+    padding: .1rem 2rem;
+    max-height: 20rem;
+    padding-left: 3.5rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      width: 1.5rem;
+      background: transparent;
+    }
+    &  > ol > *{
+      border-right: 2px solid $color-orangered;
+      margin: 1rem 0;
+      padding-left: .5rem;
+      font-size: 1.5rem;
+    }
+    @include respond(phone){
+
+    }
+  }
+  &__linkURL{
+
+    @include respond(phone){
+
+    }
+  }
+  &__comment{
+
+    @include respond(phone){
+
+    }
+  }
+  &__btn{
+    display: flex;
+    justify-content: space-between;
+    &>*{
+      padding: .1rem 2rem;
+    }
+    &--modifier{
+      &>*{
+        padding: .1rem 0rem;
+      }
+    }
+  }
+}
+#ProjectDetailView__flexer-head{
+  background:$color-link;
+  opacity: 1;
+  backface-visibility:hidden;
+  position: sticky;
+  top:-4rem;
+  z-index: 20;
+}
+.ProjectDetailView__flexer{
+  display: flex;
+  justify-content: space-between;
+  color: $color-grey-light;
+  position: relative;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  &-main{
+    flex-flow:column;
+    // border: 1px solid $color-orangered;
+    min-height: 15rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      width: 1.5rem;
+      background: transparent;
+    }
+  }
+  &-first{
+
+    // border: 1px solid $color-orangered;
+    // text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  &-second{
+    // border: 1px solid $color-orangered;
+    font-size: 1.5rem;
+  }
+
+}
+.PDWSecond{
+  text-align: right;
+}
+.ProjectDetailView__name1{
+  font-size: 2.3rem;
+}

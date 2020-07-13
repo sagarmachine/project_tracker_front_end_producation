@@ -1,0 +1,129 @@
+.addProject{
+  & hr{
+    border: none;
+    border-bottom:.5px dashed rgba($color-white,.3);
+    margin-bottom: 1.5rem;
+  }
+  & h6{
+    text-transform: capitalize;
+    color: $color-orangered;
+    margin: 0rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 2px;
+  }
+  background: rgba($color-link,1);
+  position: relative;
+  align-self: flex-start;
+  height: 100%;
+  width: 35%;
+  margin: 5rem;
+  @include respond(tab-port){
+    width: 60%;
+    margin:5rem 0rem;
+  }
+  @include respond(phone){
+    width: 100%;
+    margin:5rem 0rem;
+  }
+  &__heading{
+    background: rgba($color-link,.9);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2.5rem 0;
+    color: $color-orangered;
+  }
+  &__item{
+    margin: .6rem;
+    &-name,&-id,&-des,&-date{
+      @include respond(tab-port){
+        width: 100%;
+        // height: 10rem;
+      }
+      height: 5rem;
+      background: rgba($color-white,.1);
+      border: none;
+      padding: 1rem;
+      color: $color-grey-light;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      width:100%;
+      border-left: 5px solid transparent;
+      &:focus{
+        border-left: 5px solid $color-white;
+        outline: none;
+      }
+    }
+    &-des{
+      height: 20rem;
+    }
+    &-date{
+
+    }
+  }
+}
+
+.addProject__item3{
+  position: relative;
+}
+
+.addNote{
+   height: 5rem;
+   padding-right: 5rem;
+   margin-bottom: .2rem;
+}
+.addLink-fullLink,.addLink-comment{
+   height: 5rem;
+   padding-right: 5rem;
+}
+.addLink-fullLink{
+  color: $color-react-blue;
+}
+.comment__span{
+  height: 2rem;
+  position: absolute;
+  color: $color-grey-light;
+  font-size: 2rem;
+  left: 1.2rem;
+}
+.addLink-comment{
+  padding-left:11rem;
+  height: 2.5rem;
+}
+.linkBox{
+  margin-bottom: .5rem;
+}
+.addIcon,.removeIcon{
+  position: absolute;
+}
+.addIcon{
+  right:1%;
+  height: 8rem;
+  z-index: 100;
+  transition: all .2s;
+  &:hover{
+   color: $color-orangered;
+  }
+  &1{
+    bottom: 0%;
+    padding: 3.4rem .5rem;
+  }
+  &2{
+    padding: 2rem .5rem;
+    bottom: 0%;
+  }
+}
+.removeIcon{
+  right:1%;
+  height: 8rem;
+  padding: 0 .5rem;
+  padding-top:.5%;
+  z-index: 100;
+  transition: all .2s;
+  &:hover{
+   color: $color-orangered;
+  }
+}

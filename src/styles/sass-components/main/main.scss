@@ -1,0 +1,12 @@
+.main{
+  // background: rgba($color-grey,.3);
+  position: relative;
+  min-height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include respond(tab-port){
+    min-height: 93vh;
+
+  }
+}

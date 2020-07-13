@@ -1,0 +1,46 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  color: $color-orangered;
+  &__items{
+    display: flex;
+    align-items: center;
+    transform: rotate(0deg);
+    height: 100%;
+    &-item{
+       color: $color-orangered;
+       padding: 3rem 2rem;
+       padding-top: 2.2rem;
+       height: 100%;
+       letter-spacing: 2px;
+       text-transform: capitalize;
+       transition: all .3s;
+
+       &:hover,&:active,&:focus{
+         background: $color-orangered;
+         color: $color-link;
+       }
+    }
+  }
+  &__toggler{
+    cursor: pointer;
+    font-size: 4rem;
+    padding: 1rem;
+    transition: transform .6s,margin-left .6s, background .2s;
+    z-index: 100;
+    @include respond(phone){
+      display: none;
+    }
+    &:hover{
+      background: $color-orangered;
+      color: $color-link;
+    }
+
+  }
+}
+.iconSize{
+  font-size: 2rem;
+  @include respond(phone){
+    font-size: 2.5rem;
+  }
+}

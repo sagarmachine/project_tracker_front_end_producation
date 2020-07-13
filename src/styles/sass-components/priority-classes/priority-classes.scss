@@ -1,0 +1,32 @@
+.HIGH{
+  background: rgba($color-sass-pink,.5);
+  color:$color-link;
+}
+.MEDIUM{
+  transition: all .5s;
+  background: rgba($color-Spring-green,.5);
+  color:$color-link;
+}
+.LOW{
+  transition: all .5s;
+  background: rgba($color-react-blue,.5);
+  color:$color-link;
+}
+
+.hoverer{
+  &:hover{
+    background: $color-orangered;
+    cursor:pointer;
+  }
+}
+
+// &:hover{
+//   // transform:scale(1.005);
+//
+//   //
+//   //
+//   //
+//   //
+//   //
+//   //
+// }

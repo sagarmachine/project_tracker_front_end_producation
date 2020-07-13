@@ -1,0 +1,39 @@
+.submitBtn{
+  cursor: pointer;
+  background: $color-postman-background;
+  color: $color-orangered;
+  padding: .5rem 3.5rem;
+  margin: 1rem 0;
+  border: none;
+  font-size: 1.9rem;
+  backface-visibility: hidden;
+  transition: all .2s;
+  border: 1px solid rgba($color-white,.1);
+  &:active,&:focus{
+   outline: none;
+   transform: translateY(1px);
+  }
+  &:hover{
+   animation: shake .5s ease-out;
+   background: $color-orangered;
+   color: $color-link;
+  }
+}
+@keyframes shake {
+  0%{
+   transform: rotate(3deg);
+  }
+  25%{
+   transform: rotate(-3deg);
+  }
+  50%{
+   transform: rotate(3deg);
+  }
+  75%{
+   transform: rotate(-3deg);
+  }
+  100%{
+   transform: rotate(0deg);
+  }
+
+}
